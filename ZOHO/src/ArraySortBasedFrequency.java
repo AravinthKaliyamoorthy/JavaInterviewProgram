@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Scanner;
 import java.util.Map.Entry;
  
 public class ArraySortBasedFrequency 
@@ -84,10 +85,15 @@ public class ArraySortBasedFrequency
 	public static void main(String[] args)
 	{
 
-		Integer arr[] = { 4, 4, 5, 6, 4, 2, 2, 8, 5 };
+		// Integer arr[] = { 4, 4, 5, 6, 2, 2, 2, 8, 5 };
 
 		// Size of array arr[]
-		int n = arr.length;
+		Scanner in = new Scanner(System.in);
+		int n = in.nextInt();
+		Integer arr[] = new Integer[n];
+		for(int i = 0; i < n; i++){
+			arr[i] = in.nextInt();
+		}
 		System.out.println("your input: "+Arrays.toString(arr)+"\n");
 
 
